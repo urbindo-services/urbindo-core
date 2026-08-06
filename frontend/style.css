@@ -15,7 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header {
     background: #1a2a3a;
     padding: 15px 60px;
@@ -80,7 +80,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Hero Section */
+/* ===== HERO ===== */
 .hero {
     background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
     padding: 120px 60px 80px;
@@ -175,7 +175,7 @@ nav a:hover {
     box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
-/* Section Headers */
+/* ===== SECTION HEADERS ===== */
 .section-header {
     text-align: center;
     margin-bottom: 50px;
@@ -192,7 +192,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* Services Section */
+/* ===== SERVICES ===== */
 #services {
     padding: 80px 60px;
     background: #f5f7fa;
@@ -211,6 +211,7 @@ nav a:hover {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    cursor: pointer;
 }
 
 .card:hover {
@@ -246,7 +247,7 @@ nav a:hover {
     font-size: 14px;
 }
 
-/* How It Works */
+/* ===== HOW IT WORKS ===== */
 #how {
     padding: 80px 60px;
     background: #ffffff;
@@ -297,7 +298,7 @@ nav a:hover {
     color: #546e7a;
 }
 
-/* Why Choose Urbindo */
+/* ===== WHY CHOOSE ===== */
 .why {
     padding: 80px 60px;
     background: #f5f7fa;
@@ -340,7 +341,7 @@ nav a:hover {
     font-size: 14px;
 }
 
-/* Reviews */
+/* ===== REVIEWS ===== */
 #reviews {
     padding: 80px 60px;
     background: #ffffff;
@@ -359,6 +360,7 @@ nav a:hover {
     padding: 30px;
     border-radius: 15px;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .review-card:hover {
@@ -389,7 +391,7 @@ nav a:hover {
     font-size: 14px;
 }
 
-/* CTA Section */
+/* ===== CTA ===== */
 .cta {
     padding: 80px 60px;
     background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
@@ -425,7 +427,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
     background: #0d1b2a;
     color: #b0bec5;
@@ -497,7 +499,7 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive Design */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
