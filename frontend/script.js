@@ -1,4 +1,4 @@
-// Mobile Menu Toggle
+// ===== MOBILE MENU TOGGLE =====
 function toggleMenu() {
     const nav = document.querySelector('nav');
     nav.classList.toggle('active');
@@ -12,16 +12,16 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// Hero Search Functionality
+// ===== HERO SEARCH FUNCTIONALITY =====
 document.querySelector('.hero-search button').addEventListener('click', function() {
     const searchInput = document.querySelector('.hero-search input');
     const query = searchInput.value.trim();
     
     if (query) {
-        alert(`Searching for: "${query}"\nWe'll find the best service for you!`);
+        alert(`🔍 Searching for: "${query}"\n\nWe'll find the best service for you!`);
         searchInput.value = '';
     } else {
-        alert('Please enter a service you need!');
+        alert('⚠️ Please enter a service you need!');
     }
 });
 
@@ -32,27 +32,25 @@ document.querySelector('.hero-search input').addEventListener('keypress', functi
     }
 });
 
-// Service Card Click - Show Booking Alert
+// ===== SERVICE CARD CLICK =====
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', function() {
         const serviceName = this.querySelector('h3').textContent;
         const price = this.querySelector('.price') ? this.querySelector('.price').textContent : 'Contact for price';
-        alert(`You selected: ${serviceName}\n${price}\n\nProceed to book this service?`);
+        alert(`📋 You selected: ${serviceName}\n💰 ${price}\n\nWould you like to proceed with booking this service?`);
     });
 });
 
-// CTA Button Click
+// ===== CTA BUTTON CLICK =====
 document.querySelector('.cta-btn').addEventListener('click', function() {
-    // Scroll to services section
     document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
     
-    // Show a welcome message after a short delay
     setTimeout(() => {
         alert('🚀 Welcome to Urbindo!\n\nSelect a service to get started. We have professionals waiting to help you!');
     }, 500);
 });
 
-// Login and Signup Button Alerts
+// ===== LOGIN & SIGNUP BUTTONS =====
 document.querySelector('.btn-login').addEventListener('click', function(e) {
     e.preventDefault();
     alert('🔐 Login Page Coming Soon!\n\nYou\'ll be able to login to your account to manage bookings.');
@@ -63,7 +61,7 @@ document.querySelector('.btn-signup').addEventListener('click', function(e) {
     alert('📝 Sign Up Coming Soon!\n\nCreate your account to start booking services today.');
 });
 
-// Smooth scroll for navigation links
+// ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -77,16 +75,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Review Interaction - Click to show more details
+// ===== REVIEW CARD CLICK =====
 document.querySelectorAll('.review-card').forEach(card => {
     card.addEventListener('click', function() {
         const reviewer = this.querySelector('.reviewer .name').textContent;
         const location = this.querySelector('.reviewer .location').textContent;
-        alert(`Review by ${reviewer} from ${location}\n\n⭐ Rating: ${this.querySelector('.review-stars').textContent.trim()}\n\nThank you for trusting Urbindo!`);
+        alert(`⭐ Review by ${reviewer} from ${location}\n\n"${this.querySelector('p').textContent}"\n\nThank you for trusting Urbindo!`);
     });
 });
 
-// Animate elements on scroll
+// ===== SCROLL ANIMATIONS =====
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -109,16 +107,14 @@ document.querySelectorAll('.card, .step, .why-item, .review-card').forEach(eleme
     observer.observe(element);
 });
 
-// Simulate booking process - Additional interactive feature
+// ===== CONSOLE WELCOME =====
 console.log('🏠 Urbindo | Trusted Home Services Platform');
 console.log('📱 Website loaded successfully!');
 console.log('✨ Ready to serve you with the best home services.');
+console.log('💡 Tip: Click on any service card to start booking!');
 
-// Add a small floating notification
+// ===== WELCOME NOTIFICATION =====
 window.addEventListener('load', function() {
-    console.log('💡 Tip: Click on any service card to start booking!');
-    
-    // Show a subtle welcome notification
     setTimeout(() => {
         const notification = document.createElement('div');
         notification.style.cssText = `
@@ -142,20 +138,18 @@ window.addEventListener('load', function() {
         `;
         document.body.appendChild(notification);
         
-        // Auto hide after 5 seconds
         setTimeout(() => {
             notification.style.animation = 'slideOut 0.5s ease';
             setTimeout(() => notification.remove(), 500);
         }, 5000);
         
-        // Click to close
         notification.addEventListener('click', () => {
             notification.remove();
         });
     }, 1000);
 });
 
-// Add animation keyframes dynamically
+// ===== ANIMATION KEYFRAMES =====
 const styleSheet = document.createElement('style');
 styleSheet.textContent = `
     @keyframes slideIn {
