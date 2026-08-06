@@ -15,10 +15,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes (UPDATE 2: Moved to the correct place)
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/services', require('./routes/services'));
-app.use('/api/bookings', require('./routes/bookings'));
-
+app.use('/api/auth', require('./backend/routes/auth'));
+app.use('/api/services', require('./backend/routes/services'));
+app.use('/api/bookings', require('./backend/routes/bookings'));
 app.get('/', (req, res) => {
   res.json({
     message: '🏠 Urbindo API',
