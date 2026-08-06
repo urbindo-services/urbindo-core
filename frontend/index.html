@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbindo | Trusted Home Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Urbindo</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#how">How It Works</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Trusted Home Services <br>at Your Doorstep</h1>
+            <p>Professional cleaning, repairs, and home solutions from verified experts.</p>
+            
+            <div class="hero-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="What service do you need? e.g., Electrician, Plumber">
+                <button>Find Service</button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <span>10K+</span>
+                    <p>Happy Customers</p>
+                </div>
+                <div>
+                    <span>500+</span>
+                    <p>Verified Professionals</p>
+                </div>
+                <div>
+                    <span>50+</span>
+                    <p>Cities Covered</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500x400/1a2a3a/ffffff?text=Urbindo+Services" alt="Urbindo Services">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Choose from a wide range of professional home services</p>
+        </div>
+
+        <div class="service-container">
+            <div class="card">
+                <i class="fas fa-broom"></i>
+                <h3>Home Cleaning</h3>
+                <p>Deep cleaning solutions for your home.</p>
+                <span class="price">From ₹499</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-bolt"></i>
+                <h3>Electrician</h3>
+                <p>Safe and reliable electrical services.</p>
+                <span class="price">From ₹399</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-wrench"></i>
+                <h3>Plumbing</h3>
+                <p>Quick fixes for all plumbing problems.</p>
+                <span class="price">From ₹449</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-snowflake"></i>
+                <h3>AC Repair</h3>
+                <p>Installation and repair services.</p>
+                <span class="price">From ₹599</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-tools"></i>
+                <h3>Appliance Repair</h3>
+                <p>Repair for your home appliances.</p>
+                <span class="price">From ₹349</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-spa"></i>
+                <h3>Beauty Services</h3>
+                <p>Salon services at your home.</p>
+                <span class="price">From ₹299</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-hammer"></i>
+                <h3>Carpenter</h3>
+                <p>Furniture repair and installation.</p>
+                <span class="price">From ₹399</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Painting</h3>
+                <p>Professional painting services.</p>
+                <span class="price">From ₹499</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-bug"></i>
+                <h3>Pest Control</h3>
+                <p>Effective pest control solutions.</p>
+                <span class="price">From ₹599</span>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safety Services</h3>
+                <p>Home security and safety checks.</p>
+                <span class="price">From ₹299</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how">
+        <div class="section-header">
+            <h2>How Urbindo Works</h2>
+            <p>Get your home services in 3 simple steps</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <i class="fas fa-hand-pointer"></i>
+                <h3>Choose a Service</h3>
+                <p>Select from our wide range of home services</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <i class="fas fa-calendar-check"></i>
+                <h3>Select Time</h3>
+                <p>Pick your preferred date and time slot</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <i class="fas fa-user-check"></i>
+                <h3>Professional Visits</h3>
+                <p>Verified expert arrives at your doorstep</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Urbindo -->
+    <section class="why">
+        <div class="section-header">
+            <h2>Why Choose Urbindo?</h2>
+            <p>We make home services easy and reliable</p>
+        </div>
+
+        <div class="why-container">
+            <div class="why-item">
+                <i class="fas fa-user-shield"></i>
+                <h3>Verified Professionals</h3>
+                <p>All experts are background-checked and verified</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-tag"></i>
+                <h3>Transparent Pricing</h3>
+                <p>No hidden costs, upfront pricing always</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-star"></i>
+                <h3>Quality Service</h3>
+                <p>100% satisfaction guaranteed on every service</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-clock"></i>
+                <h3>Convenient Booking</h3>
+                <p>Book in seconds, manage everything online</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our team is always here to help you</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Trusted Platform</h3>
+                <p>Join thousands of satisfied customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>Real reviews from real people</p>
+        </div>
+
+        <div class="review-container">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Excellent service! The electrician arrived on time and fixed everything perfectly. Highly recommend Urbindo!"</p>
+                <div class="reviewer">
+                    <span class="name">Sarah M.</span>
+                    <span class="location">Mumbai</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Best home cleaning service I've ever used. The team was professional and did a thorough job. 5 stars!"</p>
+                <div class="reviewer">
+                    <span class="name">Raj K.</span>
+                    <span class="location">Delhi</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"The plumber was very skilled and fixed our leaky pipe quickly. Great service and affordable prices."</p>
+                <div class="reviewer">
+                    <span class="name">Priya S.</span>
+                    <span class="location">Bangalore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Get Started?</h2>
+            <p>Book your first service today and experience the Urbindo difference</p>
+            <button class="cta-btn">Book a Service Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Urbindo</h3>
+                <p>Trusted Home Services Platform</p>
+                <p>Making home services easy, reliable, and affordable for everyone.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#">Home Cleaning</a>
+                <a href="#">Electrician</a>
+                <a href="#">Plumbing</a>
+                <a href="#">AC Repair</a>
+                <a href="#">Painting</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Press</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Urbindo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
